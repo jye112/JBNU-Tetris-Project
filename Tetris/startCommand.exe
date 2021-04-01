@@ -1,0 +1,12 @@
+
+
+sudo insmod DM_driver.ko;
+sudo insmod fpga_fnd_driver.ko;
+sudo insmod push_switch_driver.ko;
+sudo insmod led_driver.ko;
+
+sudo mknod /dev/csemad_push_switch c 265 0;
+sudo mknod /dev/csemad_DM c 262 0;
+sudo mknod /dev/csemad_led c 260 0;
+sudo mknod /dev/csemad_fpga_fnd c 261 0;
+
